@@ -1,18 +1,27 @@
 {
-  "configurations": [
-    {
-      "name": "windows-gcc-x64",
-      "includePath": [
-        "${workspaceFolder}/**"
-      ],
-      "compilerPath": "gcc",
-      "cStandard": "c11",
-      "cppStandard": "c++20",
-      "intelliSenseMode": "windows-gcc-x64",
-      "compilerArgs": [
-        ""
-      ]
-    }
-  ],
-  "version": 4
+    "configurations": [
+        {
+            "name": "windows-gcc-x64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/pflug/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "C:/Users/pflug/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "C:/Users/pflug/.platformio/packages/framework-arduino-avr/variants/mega",
+                "C:/Users/pflug/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "C:/Users/pflug/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "C:/Users/pflug/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "C:/Users/pflug/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                "D:/Projekte/Arduino/MCP2515",
+                "D:/Projekte/Arduino/MCP2515/src"
+            ],
+            "compilerPath": "C:/Users/pflug/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerArgs": [
+                ""
+            ]
+        }
+    ],
+    "version": 4
 }

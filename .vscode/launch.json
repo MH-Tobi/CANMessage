@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Projekte/Arduino/CANMessage/src",
-      "program": "d:/Projekte/Arduino/CANMessage/src/build/Debug/outDebug",
+      "cwd": "d:/Projekte/Arduino/CAN/lib/MCP2515/src",
+      "program": "d:/Projekte/Arduino/CAN/lib/MCP2515/src/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

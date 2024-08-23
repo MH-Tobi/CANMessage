@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+examples/CanMessageSend/platformio.ini
+examples/CanMessageSend/.vscode/extensions.json
+.vscode/settings.json
+.vscode/launch.json
+.vscode/c_cpp_properties.json
+examples/CanMessageReceive/.vscode/extensions.json
+examples/CanMessageReceive/platformio.ini
+.clang-format
