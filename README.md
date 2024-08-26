@@ -19,7 +19,7 @@ So it is nessecary to use this Library.
 #include <CANMessage.h>
 ```
 
-2. Create an Instance:
+2. Create an Instance (required for each Message):
 
 ```c++
 CANMessage Message;
