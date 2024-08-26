@@ -28,7 +28,7 @@ class CANMessage
 {
 	private:
 		uint32_t _ID;               // Message-ID (11 bit for Standard-Frame; 29 bit for Extended Frame)
-        uint8_t _DLC;               // Datallength 0-8
+        uint8_t _DLC;               // Datalength 0-8
 		bool _RTR;                  // Remote Transmission Request
 		uint8_t _Frame;             // Standard-Frame = 0; Extended-Frame = 1
         uint8_t _Direction;         // Message-Direction (0 = Receive; 1 = Transmit)

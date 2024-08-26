@@ -1,8 +1,7 @@
 #include "CANMessage.h"
 
 /**
- * @brief ClassConstructor
- *
+ * @brief Constructor
  */
 CANMessage::CANMessage() :
     _ID(0),
@@ -19,7 +18,6 @@ CANMessage::CANMessage() :
 
 /**
  * @brief Deconstructor
- *
  */
 CANMessage::~CANMessage()
 {
