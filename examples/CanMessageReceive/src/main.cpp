@@ -57,12 +57,12 @@ void setup() {
 
   // Showing startup of the board
   digitalWrite(LED_BUILTIN, HIGH);
-  delay(250);                     
-  digitalWrite(LED_BUILTIN, LOW); 
-  delay(250);                     
+  delay(250);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(250);
   digitalWrite(LED_BUILTIN, HIGH);
-  delay(250);                     
-  digitalWrite(LED_BUILTIN, LOW); 
+  delay(250);
+  digitalWrite(LED_BUILTIN, LOW);
   delay(250);
 
   // Set the ChipSelect-Pin for the SPI-Communication
@@ -74,9 +74,9 @@ void setup() {
     Serial.print("Init-Error: 0x");
     Serial.println(MCP2515Module.getLastMCPError(), HEX);
     digitalWrite(LED_BUILTIN, HIGH);
-    delay(500);                     
-    digitalWrite(LED_BUILTIN, LOW); 
-    delay(500);                     
+    delay(500);
+    digitalWrite(LED_BUILTIN, LOW);
+    delay(500);
   }
 
   // To got Interrupts on the Interrupt-Pin you have to enable the Interrupts for Receive-Buffer.
@@ -85,18 +85,20 @@ void setup() {
     Serial.print("ChangeInterruptSetting-Error: 0x");
     Serial.println(MCP2515Module.getLastMCPError(), HEX);
     digitalWrite(LED_BUILTIN, HIGH);
-    delay(250);                     
-    digitalWrite(LED_BUILTIN, LOW); 
-    delay(250);                     
+    delay(250);
+    digitalWrite(LED_BUILTIN, LOW);
+    delay(250);
     digitalWrite(LED_BUILTIN, HIGH);
-    delay(250);                     
-    digitalWrite(LED_BUILTIN, LOW); 
+    delay(250);
+    digitalWrite(LED_BUILTIN, LOW);
     delay(250);
   }
-  
+
   // Create CAN-Messages
   TimeCounter.init((uint32_t) 0xA74BF55, 8, false, CANMESSAGE_FRAME_EXTENDED, CANMESSAGE_DIRECTION_RECEIVE, MCP2515Module);
   MessageCounter.init((uint32_t) 0x1AB, 8, false, CANMESSAGE_FRAME_STANDARD, CANMESSAGE_DIRECTION_RECEIVE, MCP2515Module);
+
+  pinMode(IntPin, INPUT);
 
   // Prepare SPI-Communication for Interrupts
   SPI.usingInterrupt(digitalPinToInterrupt(IntPin));
@@ -106,7 +108,7 @@ void setup() {
 }
 
 void loop() {
-  
+
   // Check if Data is in the Message-Buffer of the Message TimeCounter
   if (TimeCounter.dataAvailable())
   {
