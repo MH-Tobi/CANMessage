@@ -5,7 +5,7 @@ Not really tested yet.
 
 ## Dependency
 
-This Library was build for the [MCP2515-Library](https://github.com/MH-Tobi/MCP2515).
+This Library was build for the [MCP2515-Library](https://github.com/MH-Tobi/MCP2515) (Release [v0.0.1](https://github.com/MH-Tobi/MCP2515/releases/tag/v0.0.1)) .
 So it is nessecary to use this Library.
 
 
